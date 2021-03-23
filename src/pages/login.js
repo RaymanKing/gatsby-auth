@@ -26,8 +26,6 @@ const Login = () => {
                 .auth()
                 .signInWithEmailAndPassword(data.email, data.password)
             setUser(result)
-            console.log('llego')
-            console.log(result)
             navigate("/")
         } catch(err){
             setData({ ...data, error: err.message })
