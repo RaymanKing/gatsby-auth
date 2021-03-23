@@ -39,13 +39,13 @@ module.exports = {
       options: {
         credentials: {
           apiKey: "AIzaSyD1VBYRib_lXeFkixX1HM-3_-XWhPg5vO4",
-          authDomain: process.env.authDomain,
-          databaseURL: process.env.databaseURL,
-          projectId: process.env.projectId,
-          storageBucket: process.env.storageBucket,
-          messagingSenderId: process.env.messagingSenderId,
-          appId: process.env.appId,
-          measurementId: process.env.measurementId
+          authDomain: "gatsby-login-f2893.firebaseapp.com",
+          databaseURL: "https://gatsby-login-f2893-default-rtdb.firebaseio.com",
+          projectId: "gatsby-login-f2893",
+          storageBucket: "gatsby-login-f2893.appspot.com",
+          messagingSenderId: "850767910085",
+          appId: "1:850767910085:web:ed21e10b76d21930e60cac",
+          measurementId: "G-8YX3H9T0G6"
         }
       }
     }
