@@ -23,9 +23,8 @@ const Register = () => {
         setData({ ...data, error: null })
         try{
             const result = await firebase
-            .auth()
-            .createUserWithEmailAndPassword(data.email, data.password)
-            console.log('llego')
+                .auth()
+                .createUserWithEmailAndPassword(data.email, data.password)
             setUser(result)
             navigate("/")
         } catch(err){

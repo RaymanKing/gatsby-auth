@@ -23,9 +23,11 @@ const Login = () => {
         setData({ ...data, error: null })
         try{
             const result = await firebase
-            .auth()
-            .signInWithEmailAndPassword(data.email, data.password)
+                .auth()
+                .signInWithEmailAndPassword(data.email, data.password)
             setUser(result)
+            console.log('llego')
+            console.log(result)
             navigate("/")
         } catch(err){
             setData({ ...data, error: err.message })
