@@ -48,6 +48,6 @@ module.exports = {
           measurementId: "G-8YX3H9T0G6"
         }
       }
-    }
+    },
   ],
 }
