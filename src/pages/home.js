@@ -9,7 +9,10 @@ import 'firebase/auth'
 
 const home = () => {
  
-  let user = firebase.auth().currentUser
+  var user = null
+  if(typeof window !== "undefined"){
+    user = firebase.auth().currentUser
+  }
   //let i = user.getIdToken()
   //console.log(i)
   if(user){
@@ -27,9 +30,6 @@ const home = () => {
         }
     });
     // --
-  }else{
-    alert ('No hay ningún usuario conectado')
-    navigate("/")
   }
   
   function externalApiRest(token){
