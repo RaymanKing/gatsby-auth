@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import firebase from "gatsby-plugin-firebase"
 import SEO from "../components/seo"
 
+import 'firebase/auth'
+
 const home = () => {
  
   let user = firebase.auth().currentUser
