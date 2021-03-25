@@ -36,7 +36,7 @@ const home = () => {
     fetch(url, {
       method: 'GET', // or 'PUT',
       headers:{
-        "Authorization": "bearer " + token,
+        "Authorization": "Bearer " + token,
       }
     }).then(res => res.json())
     .catch(error => console.error('Error:', error))
