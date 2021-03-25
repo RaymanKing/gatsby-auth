@@ -2,11 +2,10 @@ import * as React from "react"
 
 import { navigate } from "gatsby"
 import Layout from "../components/layout"
-//import firebase from "gatsby-plugin-firebase"
+import firebase from "gatsby-plugin-firebase"
 import SEO from "../components/seo"
 
 import 'firebase/auth'
-import firebase from "firebase/app"
 
 const home = () => {
  
