@@ -39,7 +39,7 @@ const home = () => {
       method: 'GET', // or 'PUT',
       headers:{
         "Authorization": "Bearer " + token,
-      }
+      },
     }).then(res => res.json())
     .catch(error => console.error('Error:', error))
     .then(response => console.log('Success:', response));
