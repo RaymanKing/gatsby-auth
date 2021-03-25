@@ -48,6 +48,6 @@ module.exports = {
           measurementId: process.env.measurementId
         }
       }
-    }
+    },
   ],
 }
